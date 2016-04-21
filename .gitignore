@@ -1,6 +1,5 @@
 # any IDE setting file   by Yang
-^\.[a-zA-Z0-9]*$
-
+*.porject
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
