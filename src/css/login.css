@@ -428,6 +428,32 @@
 	background-color: rgb(0,103,193);
 }
 
+.footer{
+	height: 170px;
+	width: 100%;
+	background-color: rgb(9,89,176);
+	position: relative;
+	margin-top: -7px;
+}
+.logo1{
+	position: absolute;
+	left: 40%;
+	padding-top: 15px;
+	font-size: 35px;
+	font-color: white;
+	font-weight: bolder;
+	color: white;
+}
+.ico{
+	position: absolute;
+	left: 70%;
+	padding-top: 60px;
+	width: 30%;
+
+}
+.ico .icochild{
+	padding: 0 4%;
+}
 /*.container_1{
 	position: relative;
 	width: 100%;
