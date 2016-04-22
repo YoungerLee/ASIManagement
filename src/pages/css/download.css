@@ -1,0 +1,17 @@
+li{list-style-type: none;}
+a{text-decoration: none;}
+.footer{clear: both;}
+.dlcontent{width: 1205px;margin:0 auto 200px;position: relative;}
+.dlcontent .dltitle{width: 187px;height:50px;background-color: rgb(9,91,173); font-size: 20px;
+	line-height: 50px;font-weight: bold;
+	border-bottom: 3px solid rgb(255,153,0);position: absolute;top: 242px;left:0px;}
+.dlcontent .dltitle a{color: white;}
+.dlcontent .dlcleft{ width:187px;float: left;}
+.dlcontent .dlcleft li{font-size: 20px;color: rgb(9,91,173);background-color: rgb(242,242,242);
+	height: 45px;line-height: 45px;font-weight: bold;}
+.dlcontent .dlcright{width:963px;float: right;position: relative;}
+.dlcontent .dlcright .dlctop{border-bottom: 3px solid  rgb(9,91,173);}
+.dlcontent .dlcright h4{font-size: 25px;margin: 25px 0 15px;}
+.dlcontent .dlcright p{color: rgb(102,102,102);font-size: 15px;position: absolute;top: 45px;right: 0;}
+.dlcontent .dlcright p a{color: rgb(102,102,102);}
+.dlcontent .dlcright .dlcsource{margin: 52px 0 200px 0;}

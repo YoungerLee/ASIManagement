@@ -1,16 +1,19 @@
+a{text-decoration: none;color:black;}
 .bulletin{width: 1206px;margin: 40px auto;position:relative;}
 .bulletintop{border-bottom: 2px solid rgb(9,91,173);}
 .bulletin h3{font-size: 20px;color:white;font-weight:normal;width:274px;height:62px;line-height:65px;
 	background: rgb(9,91,173) url(../img/bulletin/u4.png) no-repeat left bottom;text-align: center;}
-.bulletin .bposition{font-size: 15px;color:rgb(102,102,102);position: absolute;left: 922px;top: 33px;}
+.bulletin .bposition{width:809px;font-size: 15px;color:rgb(102,102,102);position: absolute;left: 922px;top: 33px;}
+.bulletin .bposition a{color:rgb(102,102,102);}
 .bulletin .bcontent{width:809px;float:left; }
 .bulletin .bcontent p{font-size:15px;text-indent: 30px;line-height: 30px;}
 .bulletin .bcontent .bcp{padding: 20px 0 200px 0;}
 .bulletin .baside{width:340px;float: right;background-color: rgb(243,243,243);margin:32px 0;position:relative;}
 .bulletin .baside img{border-bottom:2px solid rgb(9,91,173);}
 .bulletin .baside h4{font-size: 20px;color: rgb(30,98,171);margin: 20px 0 20px 33px;}
+.bulletin .baside h4 a{color: rgb(30,98,171);}
 .bulletin .baside span{font-size: 12px;position: absolute;left: 276px;top:162px; }
 .bulletin .baside ul{width: 265px;margin: 0 auto;}
 .bulletin .baside ul li{list-style-type: none;padding: 10px 0;border-bottom: 1px solid rgb(204,204,204)}
-.bulletin .baside ul a{text-decoration: none;color: black;font-size: 15px;}
+.bulletin .baside ul a{font-size: 15px;}
 .footer{clear: both;}
