@@ -162,3 +162,19 @@ li a{
 .right .last_input{
     text-align: right;
 }
+.right .photo{
+    position: absolute;
+    right: 120px;
+    top:100px;
+    width: 210px;
+    height: 300px;
+}
+.right .photo p{
+    text-indent: 12px;
+    font-size: 8px;
+}
+.right .photo p,h5{
+    color: rgb(0,89,167);
+}
+#preview{width:144px;height:172px;border:1px solid #000;overflow:hidden;}
+#imghead {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);display: none;}

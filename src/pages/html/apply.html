@@ -10,6 +10,7 @@
 		<script type="text/javascript" src="../js/login.js" ></script>
 		<script type="text/javascript" src="../js/index.js" ></script>
 		<script type="text/javascript" src="../js/about.js" ></script>
+		<script type="text/javascript" src="../js/apply.js" ></script>
 	</head>
 		<body>
 		<div class="body">
@@ -118,6 +119,21 @@
 			    			<div><label for="length">学制</label><input type="text"></div>
 			    			<div class="last_input"><input type="submit" value="提 交" class="submit"></div>
 			    		</form>
+
+						<div class="photo">
+							<div id="preview">
+								<img id="hid" src="../img/apply/name.png">
+						    	<img id="imghead" src='<%=request.getContextPath()%>/images/defaul.jpg'>
+							</div>
+						    <br>
+						    <input type="file" onchange="previewImage(this)" />
+						    <br>
+						    <br>
+						    <h5>上传照片要求：</h5>
+						    <p>照片大小不大于40K</p>
+						    <p>照片尺寸要求144*172（宽*高）</p>
+						    <p>照片格式限制为BMP/JPG/JPEG格式</p>
+					    </div>  
 
 			    		<span>当前位置：<a href="#">首页 </a>><a href="#">在线报名/申请 </a>><a href="#">比赛在线报名 </a></span>
 			    	</div>
