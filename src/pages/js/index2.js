@@ -11,8 +11,8 @@ $(function(){
       var self = this
       $("#next").bind("click",function(){
         if(!self.animated){
-          self.index == 4? 1:self.index + 1;
-          self.alt == 4? 1: self.alt + 1;
+          self.index = (self.index == 4)? 1:self.index + 1;
+          self.alt = (self.alt == 4?) 1: self.alt + 1;
           
           self._showButtons();
           self._showTitle();
@@ -21,8 +21,8 @@ $(function(){
 	    });
       $("#prv").bind("click",function(){
         if(!self.animated){
-          self.index == 1? 4: self.index - 1;
-          self.alt == 1? 4:self.alt - 1;
+          self.index = (self.index == 1)? 4: self.index - 1;
+          self.alt = (self.alt == 1)? 4:self.alt - 1;
           
           self._showButtons();
           self._showTitle();
