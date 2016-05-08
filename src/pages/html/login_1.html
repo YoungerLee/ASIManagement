@@ -2,12 +2,12 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Index</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Login</title>
 		<link rel="stylesheet" href="../css/login.css" />
-		<link rel="stylesheet" href="../css/index.css" />
 		<script type="text/javascript" src="../js/lib/jquery.js" ></script>
 		<script type="text/javascript" src="../js/login.js" ></script>
-		<script type="text/javascript" src="../js/index2.js" ></script>
+		
 	</head>
 	<body>
 		<div class="body">
@@ -92,8 +92,37 @@
 					</div>
 				</div>
 			</div>
+			<div class="content">
+				<div class="logo"><img src="../img/login/logo.png" /></div>
+				<form class="form">
+					<p class="textlogin">账号登录</p>
+					<div class="formGroup">
+						<label for="username" class="controlLabel"> 
+							<img src="../img/login/name.png">
+						</label>
+						<input type="text" class="formControl" placeholder="邮箱/手机号码" id="name"> 
+					</div>
+					<div class="formGroup">
+						<label for="username" class="controlLabel"> 
+							<img src="../img/login/password.png">
+						</label>
+						<input type="password" class="formControl" placeholder="密码" id="pwd">
+					</div>
+					
+					<div class="forgetPsw">
+						<span id="fl">
+							<input type="checkbox" name="autologin" value="true" id="checkboxButtonList2_2"  />
+							<label for="checkboxButtonList2_2">下次自动登录</label>
+						</span>
+						<span id="fr">免费注册|忘记密码?</span>
+					</div>
+					<div class="loginControl">
+						<input type="button" value="登  录" />
+					</div>
+				</form>
+			</div>
 		</div>
-		<!--<div class="container_2">
+		<!--<div class="container_1">
 			<div class="font">
 				<p id="up">广东工业大学信息工程学院</p>
 				<p id="middle">科技创新协会</p>
@@ -101,47 +130,5 @@
 			</div>
 			<span id="logo_2"/></span>
 		</div>-->
-		<div class="container">
-			<div class="container_3">
-				<div class="listImage">
-					<img src="../img/index/4.jpg" alt="4" data="2015信工科协招新啦！" />
-					<div class="image">
-						<img src="../img/index/1.jpg" alt="1" data="科技创新协会" />
-						<img src="../img/index/2.jpg" alt="2" data="科协成功举办华南同创校园论坛第二期" />
-						<img src="../img/index/3.png" alt="3" data="上天入地无所不能" />
-						<img src="../img/index/4.jpg" alt="4" data="2015信工科协招新啦！" />
-					</div>
-					<img src="../img/index/1.jpg" alt="1" data="科技创新协会" />
-				</div>
-				<div class="Buttons">
-					<span index="1" class="on"></span>
-					<span index="2"></span>
-					<span index="3"></span>
-					<span index="4"></span>
-				</div>
-				<a class="arrow" id="prv">&lt;</a>
-				<a class="arrow" id="next">&gt;</a>
-				<div class="title">
-					<p>科技创新协会</p>
-				</div>
-			</div>
-		</div>
-		<div class="footer">
-			<div class="foot">
-				<div id="foot">
-					<span></span>
-					<span id="second">
-						<img src="../img/logo_3.png" />
-						<p>科技创新协会</p>
-					</span>
-					<span>
-						<img src="../img/wechat.png" />
-						<img src="../img/qq.png" />
-						<img src="../img/weibo.png" />
-					</span>
-				</div>
-				
-			</div>
-		</div>
 	</body>
 </html>
