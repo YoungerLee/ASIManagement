@@ -1,59 +1,45 @@
- function previewImage(file)
-        {
-          var hid=document.getElementById("hid");
-          hid.style.display="none";
-          var MAXWIDTH  = 260; 
-          var MAXHEIGHT = 180;
-          var div = document.getElementById('preview');
-          if (file.files && file.files[0])
-          {
-              div.innerHTML ='<img id=imghead>';
-              var img = document.getElementById('imghead');
-              img.style.display="block";
-              img.onload = function(){
-                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
-                img.width  =  rect.width;
-                img.height =  rect.height;
-//                 img.style.marginLeft = rect.left+'px';
-                img.style.marginTop = rect.top+'px';
-              }
-              var reader = new FileReader();
-              reader.onload = function(evt){img.src = evt.target.result;}
-              reader.readAsDataURL(file.files[0]);
+$(function () {
+  function specific(m){
+          $(".right>div:eq("+m+")").removeClass();
+          $(".right>div:eq("+m+")").addClass("on");
+                  switch(m){
+                    case 0:$(".right>p span").html("比赛在线报名");
+                           break;
+                    case 1:$(".right>p span").html("查询获奖信息");
+                           break;
+                    default:$(".right>p span").html("申请实验室");
+                           break;
+                  }
           }
-          else //兼容IE
-          {
-            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
-            file.select();
-            var src = document.selection.createRange().text;
-            div.innerHTML = '<img id=imghead>';
-            var img = document.getElementById('imghead');
-            img.style.display="block";
-            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
-            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
-            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
-            div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
-          }
-        }
-        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
-            var param = {top:0, left:0, width:width, height:height};
-            if( width>maxWidth || height>maxHeight )
-            {
-                rateWidth = width / maxWidth;
-                rateHeight = height / maxHeight;
-                
-                if( rateWidth > rateHeight )
-                {
-                    param.width =  maxWidth;
-                    param.height = Math.round(height / rateWidth);
-                }else
-                {
-                    param.width = Math.round(width / rateHeight);
-                    param.height = maxHeight;
-                }
-            }
-            
-            param.left = Math.round((maxWidth - param.width) / 2);
-            param.top = Math.round((maxHeight - param.height) / 2);
-            return param;
-        }
+
+    $(".right>div:eq(0)").removeClass();
+    $(".right>div:eq(0)").addClass("on");
+      
+    for(var s = 0;s < 3;s++){
+		     $(".others:eq("+s+")").bind("click",function (){
+                  
+  		     	  for (var i = 0;i<3;i++)
+  		     	  {
+  		           $(".others:eq("+i+")").css({"background-color":"#fff"});
+                     $(".right").children("div").removeClass();
+                     $(".right").children("div").addClass("hide");
+  		     	  }
+				
+    				  $(this).css({"background-color":"#f2f2f2"});
+
+              var oindex=$(this).index()-1;
+              specific(oindex);
+
+
+		     })
+    }
+
+    // for(var s = 0;s < 9;s++){
+    //      $(".others:eq("+s+")").hover(function (){
+    //               $(this).css({"background-color":"#f2f2f2"});
+    //      },function (){
+    //       $(this).css({"background-color":"#fff"});
+    //     })
+    // }
+
+ });

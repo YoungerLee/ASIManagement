@@ -9,8 +9,8 @@
 		<script type="text/javascript" src="../js/jquery.js" ></script>
 		<script type="text/javascript" src="../js/login.js" ></script>
 		<script type="text/javascript" src="../js/index.js" ></script>
-		<script type="text/javascript" src="../js/about.js" ></script>
 		<script type="text/javascript" src="../js/apply.js" ></script>
+		<script type="text/javascript" src="../js/photo.js" ></script>
 	</head>
 		<body>
 		<div class="body">
@@ -98,51 +98,92 @@
 		    <div class="container_kexie">
 		    	<img src="../img/kexie/u5.png" alt="###">
 			    	<div class="right">
-			    		<h1>比赛在线报名</h1>
-			    		<form action="#">
-			    			<div>
-			    				<label for="porject">报名项目</label>
-			    				<select name="project" id="">
-			    				<option value="1">项目1</option>
-			    				<option value="2">项目2</option>
-			    				<option value="3">项目3</option>
-			    				</select>
-			    			</div>
-			    			<div><label for="name">姓名</label><input type="text"></div>
-			    			<div><label for="sex">性别</label><input type="text"></div>
-			    			<div><label for="num">学号</label><input type="text"></div>
-			    			<div><label for="tel">联系方式</label><input type="text"></div>
-			    			<div><label for="college">院系</label><input type="text"></div>
-			    			<div><label for="major">专业</label><input type="text"></div>
-			    			<div><label for="class">班级</label><input type="text"></div>
-			    			<div><label for="grade">年级</label><input type="text"></div>
-			    			<div><label for="length">学制</label><input type="text"></div>
-			    			<div class="last_input"><input type="submit" value="提 交" class="submit"></div>
-			    		</form>
+			    		<div class="hide">
+				    		<h1>比赛在线报名</h1>
+				    		<form action="#">
+				    			<div>
+				    				<label for="porject">报名项目</label>
+				    				<select name="project" id="">
+				    				<option value="1">项目1</option>
+				    				<option value="2">项目2</option>
+				    				<option value="3">项目3</option>
+				    				</select>
+				    			</div>
+				    			<div><label for="name">姓名</label><input type="text"></div>
+				    			<div><label for="sex">性别</label><input type="text"></div>
+				    			<div><label for="num">学号</label><input type="text"></div>
+				    			<div><label for="tel">联系方式</label><input type="text"></div>
+				    			<div><label for="college">院系</label><input type="text"></div>
+				    			<div><label for="major">专业</label><input type="text"></div>
+				    			<div><label for="class">班级</label><input type="text"></div>
+				    			<div><label for="grade">年级</label><input type="text"></div>
+				    			<div><label for="length">学制</label><input type="text"></div>
+				    			<div class="last_input"><input type="submit" value="提 交" class="submit"></div>
+				    		</form>
 
-						<div class="photo">
-							<div id="preview">
-								<img id="hid" src="../img/apply/name.png">
-						    	<img id="imghead" src='<%=request.getContextPath()%>/images/defaul.jpg'>
-							</div>
-						    <br>
-						    <input type="file" onchange="previewImage(this)" />
-						    <br>
-						    <br>
-						    <h5>上传照片要求：</h5>
-						    <p>照片大小不大于40K</p>
-						    <p>照片尺寸要求144*172（宽*高）</p>
-						    <p>照片格式限制为BMP/JPG/JPEG格式</p>
-					    </div>  
+							<div class="photo">
+								<div id="preview">
+									<img id="hid" src="../img/apply/name.png">
+							    	<img id="imghead" src='<%=request.getContextPath()%>/images/defaul.jpg'>
+								</div>
+							    <br>
+							    <input type="file" onchange="previewImage(this)" />
+							    <br>
+							    <br>
+							    <h5>上传照片要求：</h5>
+							    <p>照片大小不大于40K</p>
+							    <p>照片尺寸要求144*172（宽*高）</p>
+							    <p>照片格式限制为BMP/JPG/JPEG格式</p>
+						    </div>  
+						</div>
+						<div class="hide">
+				    		<h1>查询获奖信息</h1>
+				    		<form action="#">
+				    			<div>
+				    				<label for="porject">报名项目</label>
+				    				<select name="project" id="">
+				    				<option value="1">项目1</option>
+				    				<option value="2">项目2</option>
+				    				<option value="3">项目3</option>
+				    				</select>
+				    			</div>
+				    			<div><label for="name">姓名</label><input type="text"></div>
+				    			<div><label for="sex">性别</label><input type="text"></div>
+				    			<div><label for="num">学号</label><input type="text"></div>
+				    			<div class="last_input"><input type="submit" value="查询" class="submit"></div>
+				    		</form>
+				    	</div>
+				    	<div class="hide">
+				    		<h1>申请实验室</h1>
+				    		<form action="#">
+				    			<div>
+				    				<label for="porject">报名项目</label>
+				    				<select name="project" id="">
+				    				<option value="1">项目1</option>
+				    				<option value="2">项目2</option>
+				    				<option value="3">项目3</option>
+				    				</select>
+				    			</div>
+				    			<div><label for="name">姓名</label><input type="text"></div>
+				    			<div><label for="sex">性别</label><input type="text"></div>
+				    			<div><label for="num">学号</label><input type="text"></div>
+				    			<div><label for="tel">联系方式</label><input type="text"></div>
+				    			<div><label for="major">专业</label><input type="text"></div>
+				    			<div><label for="class">班级</label><input type="text"></div>
+				    			<div><label for="grade">年级</label><input type="text"></div>
+				    			<div><label for="introduce">自我介绍</label><textarea name="introduce" id="introduce" cols="35" rows="8"></textarea></div>
+				    			<div class="last_input"><input type="submit" value="提交" class="submit"></div>
+				    		</form>
+				    	</div>
 
-			    		<span>当前位置：<a href="#">首页 </a>><a href="#">在线报名/申请 </a>><a href="#">比赛在线报名 </a></span>
+			    		<p>当前位置：<a href="index.html">&nbsp;首页</a>><a href="#">&nbsp;在线报名/申请</a>>&nbsp;<span>比赛在线报名</span></p>
 			    	</div>
 			    	<div class="sidebar">
 			    		<ul>
 			    			<li class="first">在线报名/申请</li>
-			    			<li id="others_1"><a href="apply.html">比赛在线报名</a></li>
-			    			<li id="others_2"><a href="inquire.html">查询获奖信息</a></li>
-			    			<li id="others_3"><a href="lab.html">申请实验室</a></li>
+			    			<li class="others pre">比赛在线报名</li>
+			    			<li class="others">查询获奖信息</li>
+			    			<li class="others">申请实验室</li>
 			    		</ul>
 			    	</div>
             </div>

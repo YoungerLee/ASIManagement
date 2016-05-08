@@ -18,16 +18,16 @@
 .sidebar{
     width: 15.1%;
     /* background-color: pink; */
-    height: 664px;
+    height: 210px;
     min-width: 175px;
     position: absolute;
-    top: 33.5%;
+    top: 242px;
 }
 .sidebar ul{
 	width:100%;
 	list-style-type: none;
 	position: relative;
-    top: -54px;
+    /*top: -54px;*/
 }
 /*.sidebar ul>li{
 	width: 100%;
@@ -49,15 +49,16 @@
     line-height: 51px;
     text-indent: 24px;
 }
-.sidebar ul>li a:hover{
+.sidebar ul>li.others:hover{
 	background-color: #f2f2f2;
-/*    cursor: pointer;*/
+    cursor: pointer;
 }
 .sidebar ul>li.first{
 	color: #fff;
     background-color: #095BAD;
     height: 49px;
     border-bottom: 2px solid #FF9900;
+    cursor: default;
 }
 li a{
     text-decoration: none;
@@ -75,7 +76,7 @@ li a{
     line-height: 51px;
     text-indent: 24px;
 }
-.sidebar ul>li#others_1 a{
+.sidebar ul>li.pre{
 	background-color: #f2f2f2;
 }
 .right{
@@ -88,7 +89,10 @@ li a{
     top: 36px;
     margin-bottom: 36px;
 }
-.right>h1{
+.hide{
+    display: none;
+}
+.right h1{
     font-family: '微软雅黑 Bold', '微软雅黑';
     font-weight: 700;
     font-style: normal;
@@ -99,21 +103,22 @@ li a{
     border-bottom: 3px solid #095BAD;
     height: 47px;
 }
-.right>span{
+.right>p{
     position: absolute;
     top: 22px;
     right: 36px;
 }
-.right>span,.right>span a{
+.right>p,.right>p a,.right>p span{
     font-family: '微软雅黑 Regular', '微软雅黑';
     font-weight: 400;
     font-style: normal;
     font-size: 15px;
     color: #666666;
 }
-.right>span a{
+.right>p a{
 	text-decoration: none;
 }
+
 .right form{
     width: 360px;
     /*width: 40%;*/
