@@ -1,7 +1,7 @@
  function previewImage(file)
         {
           var hid=document.getElementById("hid");
-          hid.style.display="none";
+          //hid.style.display="none";
           var MAXWIDTH  = 260; 
           var MAXHEIGHT = 180;
           var div = document.getElementById('preview');
